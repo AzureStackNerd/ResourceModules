@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
-            "value": "<<namePrefix>>-az-pls-appgw-001"
+            "value": "<<namePrefix>>-az-pls-001"
         },
         "lock": {
             "value": "CanNotDelete"

@@ -14,7 +14,7 @@ This module deploys Network PrivateLinkServices.
 
 | Resource Type | API Version |
 | :-- | :-- |
-| `Microsoft.Authorization/locks` | [2020-05-01](https://docs.microsoft.com/en-us/azure/templates/Microsoft.Authorization/2020-05-01/locks) |
+| `Microsoft.Authorization/locks` | [2017-04-01](https://docs.microsoft.com/en-us/azure/templates/Microsoft.Authorization/2017-04-01/locks) |
 | `Microsoft.Authorization/roleAssignments` | [2020-10-01-preview](https://docs.microsoft.com/en-us/azure/templates/Microsoft.Authorization/2020-10-01-preview/roleAssignments) |
 | `Microsoft.Network/privateLinkServices` | [2021-08-01](https://docs.microsoft.com/en-us/azure/templates/Microsoft.Network/2021-08-01/privateLinkServices) |
 
@@ -172,7 +172,7 @@ module privateLinkServices './Microsoft.Network/privateLinkServices/deploy.bicep
   name: '${uniqueString(deployment().name)}-privateLinkServices'
   params: {
     // Required parameters
-    name: '<<namePrefix>>-az-pls-appgw-001'
+    name: '<<namePrefix>>-az-pls-001'
     // Non-required parameters
     ipConfigurations: [
       {
@@ -210,7 +210,7 @@ module privateLinkServices './Microsoft.Network/privateLinkServices/deploy.bicep
   "parameters": {
     // Required parameters
     "name": {
-      "value": "<<namePrefix>>-az-pls-appgw-001"
+      "value": "<<namePrefix>>-az-pls-001"
     },
     // Non-required parameters
     "ipConfigurations": {
