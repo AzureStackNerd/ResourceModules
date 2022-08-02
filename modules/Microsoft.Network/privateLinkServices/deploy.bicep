@@ -54,7 +54,7 @@ resource defaultTelemetry 'Microsoft.Resources/deployments@2021-04-01' = if (ena
   }
 }
 
-resource privateLinkService 'Microsoft.Network/privateLinkServices@2021-08-01' = {
+resource privateLinkService 'Microsoft.Network/privateLinkServices@2022-01-01' = {
   name: name
   location: location
   tags: tags
