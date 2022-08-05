@@ -58,7 +58,7 @@ resource privateLinkService 'Microsoft.Network/privateLinkServices@2022-01-01' =
   name: name
   location: location
   tags: tags
-  extendedLocation: extendedLocation
+  extendedLocation: !empty(extendedLocation) ? extendedLocation : null
   properties: {
     autoApproval: autoApproval
     enableProxyProtocol: enableProxyProtocol
